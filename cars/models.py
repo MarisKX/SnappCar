@@ -30,8 +30,9 @@ class Car(models.Model):
         ('L', 'LPG'),
     ]
     fuel = models.CharField(max_length=10, choices=fuel_choices, default='P')
+    engine = models.CharField(max_length=100)
     purchase_date = models.DateField(auto_now_add=False)
-    sales_date = models.DateField(auto_now_add=False)
+    sales_date = models.DateField(auto_now_add=False, null=True, blank=True)
     residual_value = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
