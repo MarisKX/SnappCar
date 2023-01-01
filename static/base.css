@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100vh - 164px);
+    color: rgb(0, 99, 27);
+    font-family: 'Acme', sans-serif;
+
+}
+
+.bg-green {
+    background-color: rgb(117,175,74) !important;
+}
